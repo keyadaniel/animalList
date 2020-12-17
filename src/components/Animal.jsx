@@ -1,15 +1,22 @@
 import React, {Component} from 'react'
 
 class Animal extends Component{
-constructor(props){
-    super(props);
-    this.state={
-        petList:[],
-        petName:'',
+    state = {
+        petList: [], 
+        petName: '',
         petBreed:'',
-        petAge:0
-    }
-}
+        petAge: 0,
+    };
+// another way to declare state in React
+//     constructor(props){
+//     super(props);
+//     this.state={
+//         petList:[],
+//         petName:'',
+//         petBreed:'',
+//         petAge:0
+//     }
+// }
 
 handleNameInput =(event)=>{
     // go to the state, target petName and update the value
